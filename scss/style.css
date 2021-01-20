@@ -14,7 +14,7 @@
   #home .row {
     margin: 0; }
   #home .imag {
-    min-height: 100%; }
+    width: 100%; }
 
 #description {
   position: relative;
@@ -36,6 +36,14 @@
   min-height: 540px; }
   #description-continue span {
     color: #c75791; }
+
+#timer {
+  position: relative;
+  background: url(https://static.tildacdn.com/tild3936-3039-4164-b533-623932343838/cde06032cbda576c207e.jpg);
+  min-height: 640px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 @media (max-width: 1280px) {
   #home h1 {

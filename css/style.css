@@ -2,6 +2,9 @@
   box-shadow: 2px 2px 5px white;
   opacity: 0.9;
   background: #fff; }
+  .navbar hr {
+    color: black;
+    width: 100%; }
   .navbar .nav-item {
     font-size: 1.4rem;
     padding-right: 1.4rem; }
@@ -11,7 +14,7 @@
   #home .row {
     margin: 0; }
   #home .imag {
-    min-height: 100%; }
+    width: 100%; }
 
 #description {
   position: relative;
@@ -34,8 +37,34 @@
   #description-continue span {
     color: #c75791; }
 
+#timer {
+  position: relative;
+  background: url(https://thumb.tildacdn.com/tild3936-3039-4164-b533-623932343838/-/format/webp/cde06032cbda576c207e.jpg);
+  min-height: 640px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #timer .black-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 640px; }
+  #timer span {
+    color: #c75791; }
+  #timer h1 {
+    font-size: 3.5rem; }
+  #timer p {
+    font-size: 1.4rem; }
+  #timer .timer1 {
+    color: #c75791;
+    font-size: 4rem;
+    letter-spacing: 6px; }
+
 @media (max-width: 1280px) {
   #home h1 {
     font-size: 4rem; }
   #home .imag {
     opacity: 0; } }
+
+/*# sourceMappingURL=style.css.map */

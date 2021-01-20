@@ -28,7 +28,7 @@ $tpink: #c75791;
     }
 
     .imag {
-        min-height: 100%;
+        width: 100%;
     }
 }
 
@@ -63,6 +63,44 @@ $tpink: #c75791;
         color: $tpink;
     }
 }
+
+#timer {
+    position: relative;
+    background: url(https://thumb.tildacdn.com/tild3936-3039-4164-b533-623932343838/-/format/webp/cde06032cbda576c207e.jpg);
+    min-height: 640px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .black-overlay {
+        background: $black-overlay;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 640px;
+    }
+
+    span {
+        color: $tpink;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    .timer1 {
+        color: $tpink;
+        font-size: 4rem;
+        letter-spacing: 6px;
+    }
+}
+
+
+
 
 @media(max-width: 1280px) {
     #home {

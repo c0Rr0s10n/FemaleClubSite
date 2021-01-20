@@ -18,7 +18,7 @@
 <body>
   <!-- START HERE -->
   <!--Navigation bar-->
-  <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top" id="main-nav">
+  <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top mb-auto" id="main-nav">
     <div class="container">
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
@@ -35,14 +35,16 @@
 
   <!--Header section-->
   <section id="home" class="bg-light">
-    <div class="row">
-      <div class="col-xl-6 col-lg-12 text-sm-center p-5 align-self-center mt-5">
-        <h1 class="display-3 py-5 wow fadeInUp">Lorem ipsum dolor sit.</h1>
-        <a href="#" class="btn btn-outline-info btn-lg text-dark wow animate__bounceIn"><i class="fas fa-arrow-right"></i> Purchase now</a>
-        <a href="#" class="btn btn-outline-info btn-lg text-dark wow animate__bounceIn"><i class="fas fa-arrow-right"></i> Purchase now</a>
-      </div>
-      <div class="col-xl-6 ml-auto pr-0 d-none d-xl-block">
-        <img src="img/for_banner.webp" alt="" class="imag img-fluid">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-6 col-lg-12 text-md-center p-5 align-self-center mt-5">
+          <h1 class="display-3 py-5 wow fadeInUp">Lorem ipsum dolor sit.</h1>
+          <a href="#" class="btn btn-outline-info btn-lg text-dark wow animate__bounceIn mb-2"><i class="fas fa-arrow-right"></i> Purchase now</a>
+          <a href="#" class="btn btn-outline-info btn-lg text-dark wow animate__bounceIn mb-2"><i class="fas fa-arrow-right"></i> Purchase now</a>
+        </div>
+        <div class="col-xl-6 ml-auto pr-0 d-none d-xl-block">
+          <img src="img/for_banner.webp" alt="" class="img-fluid">
+        </div>
       </div>
     </div>
   </section>
@@ -68,7 +70,7 @@
   <!--Description continue section-->
   <section id="description-continue" class=" text-left bg-light">
     <div class="text-dark">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-10 align-self-start ml-auto wow fadeInUp">
             <h1 class="text pb-3 pt-5">Lorem ipsum dolor sit.</h1>
@@ -80,7 +82,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-10 col-md-6 align-self-md-end align-self-start ml-auto ml-md-auto wow fadeInUp">
+          <div class="col-10 col-md-5 align-self-md-end align-self-start ml-auto ml-md-auto wow fadeInUp">
             <h1 class="text pb-3 pt-5">Lorem ipsum dolor sit.</h1>
             <p class="lead mb-2">Lorem, ipsum. <strong><span> dsadasda</span></strong></p>
             <p class="lead mb-2">Lorem, ipsum. <strong><span> dsadasda</span></strong></p>
@@ -104,12 +106,23 @@
   </section>
 
 
-
-  <section id="timer">
+  <!--Timer section-->
+  <section id="timer" class="text-white">
     <div class="black-overlay">
       <div class="container">
-        <div class="row">
-          
+        <div class="row text-center pt-5">
+          <div class="col-12 p-5 mt-5">
+            <h1 class="">УСПЕЙ <br>ПРИОБРЕСТИ МАРАФОН
+            </h1>
+          </div>
+          <div class="col-12"><p>ЦЕНА СО СКИДКОЙ <span>12.500тг</span><br>
+            <span>ДЕЙСТВУЕТ ТОЛЬКО 15 МИНУТ!</span><br>
+            ЦЕНА БЕЗ СКИДКИ <span>17.000тг</span><br>
+            СТАРТ 20 ЯНВАРЯ <br>
+            <span>ЦЕНА ПОСЛЕ СТАРТА 55.000тг</span></p></div>
+        </div>
+        <div class="col-12 align-self-center text-center">
+          <div class="timer1"></div>
         </div>
       </div>
     </div>

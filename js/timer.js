@@ -27,7 +27,7 @@ setInterval(() => {
     else if (+seconds == 60){
         seconds = "00";
     }
-    timer.innerHTML = hours + ":" + minutes + ":" + seconds;
+    timer.innerHTML = hours + " | " + minutes + " | " + seconds;
 }, 1000);
 
  
