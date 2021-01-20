@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  --tpink: #c75791;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -18,6 +19,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
+  --tpink: #c75791;
   --primary: #007bff;
   --secondary: #6c757d;
   --success: #28a745;
@@ -1341,6 +1343,22 @@ pre {
   color: #212529;
   background-color: rgba(0, 0, 0, 0.075); }
 
+.table-tpink,
+.table-tpink > th,
+.table-tpink > td {
+  background-color: #efd0e0; }
+.table-tpink th,
+.table-tpink td,
+.table-tpink thead th,
+.table-tpink tbody + tbody {
+  border-color: #e2a8c6; }
+
+.table-hover .table-tpink:hover {
+  background-color: #e9bdd3; }
+  .table-hover .table-tpink:hover > td,
+  .table-hover .table-tpink:hover > th {
+    background-color: #e9bdd3; }
+
 .table-primary,
 .table-primary > th,
 .table-primary > td {
@@ -1921,6 +1939,30 @@ a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none; }
 
+.btn-tpink {
+  color: #fff;
+  background-color: #c75791;
+  border-color: #c75791; }
+  .btn-tpink:hover {
+    color: #fff;
+    background-color: #ba3e7e;
+    border-color: #b03b78; }
+  .btn-tpink:focus, .btn-tpink.focus {
+    color: #fff;
+    background-color: #ba3e7e;
+    border-color: #b03b78;
+    box-shadow: 0 0 0 0.2rem rgba(207, 112, 162, 0.5); }
+  .btn-tpink.disabled, .btn-tpink:disabled {
+    color: #fff;
+    background-color: #c75791;
+    border-color: #c75791; }
+  .btn-tpink:not(:disabled):not(.disabled):active, .btn-tpink:not(:disabled):not(.disabled).active, .show > .btn-tpink.dropdown-toggle {
+    color: #fff;
+    background-color: #b03b78;
+    border-color: #a73871; }
+    .btn-tpink:not(:disabled):not(.disabled):active:focus, .btn-tpink:not(:disabled):not(.disabled).active:focus, .show > .btn-tpink.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(207, 112, 162, 0.5); }
+
 .btn-primary {
   color: #fff;
   background-color: #007bff;
@@ -2112,6 +2154,25 @@ fieldset:disabled a.btn {
     border-color: #171a1d; }
     .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-dark.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5); }
+
+.btn-outline-tpink {
+  color: #c75791;
+  border-color: #c75791; }
+  .btn-outline-tpink:hover {
+    color: #fff;
+    background-color: #c75791;
+    border-color: #c75791; }
+  .btn-outline-tpink:focus, .btn-outline-tpink.focus {
+    box-shadow: 0 0 0 0.2rem rgba(199, 87, 145, 0.5); }
+  .btn-outline-tpink.disabled, .btn-outline-tpink:disabled {
+    color: #c75791;
+    background-color: transparent; }
+  .btn-outline-tpink:not(:disabled):not(.disabled):active, .btn-outline-tpink:not(:disabled):not(.disabled).active, .show > .btn-outline-tpink.dropdown-toggle {
+    color: #fff;
+    background-color: #c75791;
+    border-color: #c75791; }
+    .btn-outline-tpink:not(:disabled):not(.disabled):active:focus, .btn-outline-tpink:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-tpink.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(199, 87, 145, 0.5); }
 
 .btn-outline-primary {
   color: #007bff;
@@ -3701,6 +3762,16 @@ input[type="button"].btn-block {
   padding-left: 0.6em;
   border-radius: 10rem; }
 
+.badge-tpink {
+  color: #fff;
+  background-color: #c75791; }
+  a.badge-tpink:hover, a.badge-tpink:focus {
+    color: #fff;
+    background-color: #b03b78; }
+  a.badge-tpink:focus, a.badge-tpink.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(199, 87, 145, 0.5); }
+
 .badge-primary {
   color: #fff;
   background-color: #007bff; }
@@ -3817,6 +3888,15 @@ input[type="button"].btn-block {
     z-index: 2;
     padding: 0.75rem 1.25rem;
     color: inherit; }
+
+.alert-tpink {
+  color: #672d4b;
+  background-color: #f4dde9;
+  border-color: #efd0e0; }
+  .alert-tpink hr {
+    border-top-color: #e9bdd3; }
+  .alert-tpink .alert-link {
+    color: #441d31; }
 
 .alert-primary {
   color: #004085;
@@ -4073,6 +4153,17 @@ input[type="button"].btn-block {
     border-width: 0 0 1px; }
     .list-group-flush > .list-group-item:last-child {
       border-bottom-width: 0; }
+
+.list-group-item-tpink {
+  color: #672d4b;
+  background-color: #efd0e0; }
+  .list-group-item-tpink.list-group-item-action:hover, .list-group-item-tpink.list-group-item-action:focus {
+    color: #672d4b;
+    background-color: #e9bdd3; }
+  .list-group-item-tpink.list-group-item-action.active {
+    color: #fff;
+    background-color: #672d4b;
+    border-color: #672d4b; }
 
 .list-group-item-primary {
   color: #004085;
@@ -4780,6 +4871,14 @@ a.close.disabled {
 .align-text-top {
   vertical-align: text-top !important; }
 
+.bg-tpink {
+  background-color: #c75791 !important; }
+
+a.bg-tpink:hover, a.bg-tpink:focus,
+button.bg-tpink:hover,
+button.bg-tpink:focus {
+  background-color: #b03b78 !important; }
+
 .bg-primary {
   background-color: #007bff !important; }
 
@@ -4879,6 +4978,9 @@ button.bg-dark:focus {
 
 .border-left-0 {
   border-left: 0 !important; }
+
+.border-tpink {
+  border-color: #c75791 !important; }
 
 .border-primary {
   border-color: #007bff !important; }
@@ -7638,6 +7740,12 @@ button.bg-dark:focus {
 
 .text-white {
   color: #fff !important; }
+
+.text-tpink {
+  color: #c75791 !important; }
+
+a.text-tpink:hover, a.text-tpink:focus {
+  color: #9d346b !important; }
 
 .text-primary {
   color: #007bff !important; }
