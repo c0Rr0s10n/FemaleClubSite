@@ -2,6 +2,9 @@
   box-shadow: 2px 2px 5px white;
   opacity: 0.9;
   background: #fff; }
+  .navbar hr {
+    color: black;
+    width: 100%; }
   .navbar .nav-item {
     font-size: 1.4rem;
     padding-right: 1.4rem; }
