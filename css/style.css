@@ -9,12 +9,24 @@
     font-size: 1.4rem;
     padding-right: 1.4rem; }
 
-#home {
-  min-height: 600px; }
-  #home .row {
-    margin: 0; }
-  #home .imag {
-    width: 100%; }
+#header {
+  min-height: 700px;
+  position: relative;
+  background-image: url(../img/girl3.jpeg), url(../img/girl1.jpeg), url(../img/girl2.jpeg);
+  background-position: center, left, right;
+  background-size: 33.3% 700px;
+  background-repeat: no-repeat; }
+  #header .black-overlay {
+    min-height: 700px;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    width: auto; }
+  #header h1 {
+    font-size: 9rem; }
+
+.transition {
+  height: 100px; }
 
 #description {
   position: relative;
@@ -45,7 +57,7 @@
   background-repeat: no-repeat;
   background-size: cover; }
   #timer .black-overlay {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
     top: 0;
     left: 0;
     width: auto;
@@ -61,6 +73,15 @@
     font-size: 4rem;
     letter-spacing: 6px; }
 
+@media screen and (max-width: 833px) {
+  #header {
+    position: relative;
+    background-image: url(../img/girl1.jpeg), url(../img/girl2.jpeg);
+    background-position: left, right;
+    background-size: 50% 700px;
+    background-repeat: no-repeat; }
+    #header h1 {
+      font-size: 7rem; } }
 @media (max-width: 1280px) {
   #home h1 {
     font-size: 4rem; }

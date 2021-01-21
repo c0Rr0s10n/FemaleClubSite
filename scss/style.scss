@@ -1,5 +1,5 @@
 $gradient-overlay:rgba(100, 31, 77, 0.747);
-$black-overlay: rgba(0,0,0,0.8);
+$black-overlay: rgba(0,0,0,0.6);
 
 $tpink: #c75791;
 
@@ -20,17 +20,44 @@ $tpink: #c75791;
     }
 }
 
-#home {
-    min-height: 600px;
+#header {
+    min-height: 700px;
+    position: relative;
+    background-image: url(../img/girl3.jpeg), url(../img/girl1.jpeg), url(../img/girl2.jpeg);
+    background-position: center, left, right;
+    background-size: 33.3% 700px;
+    background-repeat: no-repeat;
 
-    .row {
-        margin: 0;
+    
+    .black-overlay {
+        min-height: 700px;
+        background: $black-overlay;
+        top: 0;
+        left: 0;
+        width: auto;
+        
     }
 
-    .imag {
-        width: 100%;
+    h1 {
+        font-size: 9rem;
     }
 }
+
+
+.transition {
+    height: 100px;
+}
+// #home {
+//     min-height: 600px;
+
+//     .row {
+//         margin: 0;
+//     }
+
+//     .imag {
+//         width: 100%;
+//     }
+// }
 
 
 #description {
@@ -102,6 +129,19 @@ $tpink: #c75791;
 
 
 
+@media screen and (max-width: 833px) {
+    #header {
+        position: relative;
+        background-image: url(../img/girl1.jpeg), url(../img/girl2.jpeg);
+        background-position: left, right;
+        background-size: 50% 700px;
+        background-repeat: no-repeat;
+
+        h1 {
+            font-size: 7rem;
+        }
+    }
+}
 
 @media(max-width: 1280px) {
     #home {
