@@ -1,5 +1,6 @@
-let promo_input = document.getElementById('php_testing');
+let promo_input = document.getElementById('promo-code');
+let results = "<?php echo $codes ?>";
 
 promo_input.oninput = () => {
-    let results = "<?php echo $val ?>";
+    console.log(results);
 }
