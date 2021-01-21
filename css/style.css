@@ -84,7 +84,7 @@ body {
     background-color: #000;
     border: 1px solid #000;
     border-radius: 50%;
-    width: 80px;
+    width: 2px;
     height: 80px; }
 
 @media screen and (max-width: 990px) and (min-width: 587px) {
@@ -95,7 +95,7 @@ body {
     background-size: 50% 700px;
     background-repeat: no-repeat; }
     #header h1 {
-      font-size: 7rem; } }
+      font-size: 4.5rem; } }
 @media screen and (max-width: 1200px) and (min-width: 990) {
   #header {
     background-image: url(../img/girl3.jpeg), url(../img/girl1.jpeg), url(../img/girl2.jpeg);
@@ -111,10 +111,23 @@ body {
     background-repeat: no-repeat;
     background-size: cover; }
     #header h1 {
-      font-size: 3.8rem; }
+      font-size: 2rem; }
 
+  #timer h1 {
+    font-size: 2.5rem; }
   #timer .timer1 {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+
+  #description-continue {
+    margin-bottom: 20px; }
+
+  #description hr {
+    margin: 5px; }
+  #description .description-text {
+    font-size: 1.3rem; }
+
+  #faq h2 {
+    font-size: 2.5rem; } }
 @media screen and (max-width: 786px) and (min-width: 587px) {
   #header h1 {
     font-size: 4rem; } }

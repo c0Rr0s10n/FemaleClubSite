@@ -139,7 +139,7 @@ body {
         background-color: #000;
         border: 1px solid #000;
         border-radius: 50%;
-        width: 80px;
+        width: 2px;
         height: 80px;
     }
 }
@@ -154,8 +154,9 @@ body {
         background-repeat: no-repeat;
 
         h1 {
-            font-size: 7rem;
+            font-size: 4.5rem;
         }
+        
     }
 }
 
@@ -181,15 +182,40 @@ body {
         background-size: cover;
 
         h1 {
-            font-size: 3.8rem;
+            font-size: 2rem;
         }
+        
     }
 
     #timer {
+        h1 {
+            font-size: 2.5rem;
+        }
+
         .timer1 {
             font-size: 3rem;
         }
     }
+
+    #description-continue {
+        margin-bottom: 20px;
+    }
+
+    #description {
+        hr {
+            margin: 5px;
+        }
+        .description-text {
+            font-size: 1.3rem;
+        }
+    }
+
+    #faq {
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+    
 }
 
 @media screen and (max-width: 786px) and (min-width: 587px) {
