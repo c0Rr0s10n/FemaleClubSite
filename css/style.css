@@ -1,3 +1,6 @@
+body {
+  width: 100%; }
+
 .navbar {
   box-shadow: 2px 2px 5px white;
   opacity: 0.9;
@@ -54,7 +57,7 @@
 #timer {
   position: relative;
   background: url(https://thumb.tildacdn.com/tild3936-3039-4164-b533-623932343838/-/format/webp/cde06032cbda576c207e.jpg);
-  min-height: 640px;
+  min-height: 800px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -63,7 +66,7 @@
     top: 0;
     left: 0;
     width: auto;
-    height: 690px; }
+    height: 800px; }
   #timer span {
     color: #c75791; }
   #timer h1 {
@@ -74,6 +77,15 @@
     color: #c75791;
     font-size: 4rem;
     letter-spacing: 6px; }
+
+#faq {
+  min-height: 800px; }
+  #faq .circle {
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px; }
 
 @media screen and (max-width: 990px) and (min-width: 587px) {
   #header {
@@ -99,9 +111,12 @@
     background-repeat: no-repeat;
     background-size: cover; }
     #header h1 {
-      font-size: 4.5rem; } }
+      font-size: 3.8rem; }
+
+  #timer .timer1 {
+    font-size: 3rem; } }
 @media screen and (max-width: 786px) and (min-width: 587px) {
   #header h1 {
-    font-size: 4.7rem; } }
+    font-size: 4rem; } }
 
 /*# sourceMappingURL=style.css.map */
