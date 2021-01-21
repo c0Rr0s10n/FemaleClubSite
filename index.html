@@ -50,7 +50,7 @@
             <div class="col-10 text-white text-center pt-0 pb-5 align-self-center mx-auto">
               <h4 class="header-text2 display-5 align-self-center mt-5 wow fadeInUpBig"><span>ПРОЕКТ ПО РАЗВИТИЮ ЛИЧНОСТИ И РАСКРЫТИЮ<br>ИСТИНОЙ ЖЕНСВЕННОСТИ</span></h4>
             </div>
-            <div class="col-10 text-center align-self-center mx-auto"><a href="#description continue"><i class="arrow-down fas fa-angle-down fa-4x"></i></a></div>
+            <div id="arrow1" class="col-10 text-center align-self-center mx-auto"><a href="#description-continue"><i class="arrow-down fas fa-angle-down fa-4x"></i></a></div>
           </div>
         </div>
       </div>
@@ -363,9 +363,28 @@
                 window.location.hash = hash-68;
             });
         }
-    });
+    });  
+</script>
+<script>
+  $('body').scrollspy({ target: '#arrow1' });
+
+  // Add smooth scrolling
+  $('#arrow1 a').on('click', function(e){
+      if(this.hash !== ''){
+          e.preventDefault();
+
+          const hash = this.hash;
+
+          $('html, body').animate({
+              scrollTop: $(hash).offset().top-68 
+          }, 800, function(){
+              window.location.hash = hash-68;
+          });
+      }
+  });  
 </script>
 <script src="js/timer.js"></script>
+
 </body>
 
 </html>
