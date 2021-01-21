@@ -29,8 +29,34 @@ body {
     position: relative;
     background-image: url(../img/girl3.jpeg), url(../img/girl1.jpeg), url(../img/girl2.jpeg);
     background-position: center, left, right;
+    -webkit-background-size: cover;
     background-size: 33.3% 700px;
     background-repeat: no-repeat;
+
+    .company-name {
+        animation-duration: 1.3s;
+    }
+    
+    .header-text1 {
+        animation-duration: 1.7s;
+    }
+    .header-text2 {
+        animation-duration: 2s;
+    }
+
+    .arrow-down {
+        color: #fff;
+    }
+
+    .arrow-down:hover {
+        color: $tpink;
+        animation: shakeY;
+        animation-duration: 3s;
+    }
+
+    .arrow-down:visited {
+        color: #fff;
+    }
 
     span {
         color: $tpink;
@@ -141,6 +167,16 @@ body {
         border-radius: 50%;
         width: 2px;
         height: 80px;
+    }
+}
+
+
+#reviews {
+    min-height: 800px;
+
+    .carousel {
+        width: 424px;
+        height: 754px;
     }
 }
 
