@@ -5,8 +5,7 @@
             while ($row = $data->fetchArray()) {
                 array_push($results, $row[2]);
             }
-            $ codes = var_dump(
-                $results,
-                json_encode($results, JSON_NUMERIC_CHECK)
-               );
             ?>
+
+
+<input type="hidden" class="codes" value="<?php foreach ($results as $code) echo $code." "; ?>">
