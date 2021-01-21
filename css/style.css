@@ -16,17 +16,19 @@
   background-position: center, left, right;
   background-size: 33.3% 700px;
   background-repeat: no-repeat; }
+  #header span {
+    color: #c75791; }
   #header .black-overlay {
     min-height: 700px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.645);
     top: 0;
     left: 0;
     width: auto; }
   #header h1 {
-    font-size: 9rem; }
+    font-size: 5rem; }
 
 .transition {
-  height: 100px; }
+  height: 20px; }
 
 #description {
   position: relative;
@@ -57,7 +59,7 @@
   background-repeat: no-repeat;
   background-size: cover; }
   #timer .black-overlay {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.645);
     top: 0;
     left: 0;
     width: auto;
@@ -73,7 +75,7 @@
     font-size: 4rem;
     letter-spacing: 6px; }
 
-@media screen and (max-width: 833px) {
+@media screen and (max-width: 990px) and (min-width: 587px) {
   #header {
     position: relative;
     background-image: url(../img/girl1.jpeg), url(../img/girl2.jpeg);
@@ -82,10 +84,24 @@
     background-repeat: no-repeat; }
     #header h1 {
       font-size: 7rem; } }
-@media (max-width: 1280px) {
-  #home h1 {
-    font-size: 4rem; }
-  #home .imag {
-    opacity: 0; } }
+@media screen and (max-width: 1200px) and (min-width: 990) {
+  #header {
+    background-image: url(../img/girl3.jpeg), url(../img/girl1.jpeg), url(../img/girl2.jpeg);
+    background-position: center, left, right;
+    background-size: 33.3% 1000px;
+    background-repeat: no-repeat; }
+    #header h1 {
+      font-size: 9rem; } }
+@media screen and (max-width: 587px) {
+  #header {
+    background-image: url(../img/587px.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #header h1 {
+      font-size: 4.5rem; } }
+@media screen and (max-width: 786px) and (min-width: 587px) {
+  #header h1 {
+    font-size: 4.7rem; } }
 
 /*# sourceMappingURL=style.css.map */
