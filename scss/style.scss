@@ -174,7 +174,7 @@ body {
     }
 }
 
-@media screen and (max-width: 587px) {
+@media screen and (max-width: 587px) and (min-width: 360px) {
     #header {
         background-image: url(../img/587px.jpg);
         background-position: center;
@@ -224,5 +224,22 @@ body {
             font-size: 4rem;
         }
     }
+}
+
+// Для бомжацких телефонов
+@media screen and (max-width: 360px) {
+    #timer {
+        .timer1 {
+            font-size: 2.6rem;
+        }
+    }
+
+    #faq {
+        h4 {
+            font-size: 1rem;
+        }
+    }
+
+    
 }
 
