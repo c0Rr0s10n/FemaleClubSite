@@ -117,11 +117,14 @@
 
   <!--Description section-->
   <section id="description" class="text-center">
-    <div class="gradient-overlay text-white py-5">
-      <div class="container">
+    <div class="gradient-overlay py-5">
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+      </video>
+      <div class="container h-100 text-white">
         <div class="row">
-          <div class="col">
-            <div class="info-header mb-5 wow fadeInUp">
+          <div class="col d-flex text-center align-items-center">
+            <div class="info-header mb-5 wow fadeInUp text-white">
               <h1 class="pb-3">Lorem ipsum dolor sit.</h1>
               <hr>
               <p class="description-text lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex commodi quo modi voluptatem iusto eligendi quas, ut exercitationem eos expedita quod porro voluptate possimus placeat sit dolorum. Animi, facere quos.</p>
@@ -376,9 +379,9 @@
           const hash = this.hash;
 
           $('html, body').animate({
-              scrollTop: $(hash).offset().top-68 
+              scrollTop: $(hash).offset().top+40 
           }, 800, function(){
-              window.location.hash = hash-68;
+              window.location.hash = hash+40;
           });
       }
   });  
