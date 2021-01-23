@@ -13,7 +13,7 @@ setInterval(() => {
     if (+minutes < 10){
         minutes = "0" + (+minutes).toString();
     }
-    timer.innerHTML = "<strong>00</strong>" + " | " + "<strong>" +minutes + "</strong>" + " | " + "<strong>" + seconds + "</strong>";
+    timer.innerHTML = "<strong>00</strong>" + " | " + "<strong>" + minutes + "</strong>" + " | " + "<strong>" + seconds + "</strong>";
 }, 1000);
 
  
