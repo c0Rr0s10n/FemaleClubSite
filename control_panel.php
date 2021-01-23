@@ -29,10 +29,9 @@
 					<table data-vertable="ver6">
 						<thead>
 							<tr class="row100 head">
-								<th class="column100 column1" data-column="column1">Id</th>
-								<th class="column100 column2" data-column="column2">Blogger</th>
-								<th class="column100 column3" data-column="column3">Promo code</th>
-								<th class="column100 column4" data-column="column4">Amount of passed</th>
+								<th class="column100 column1" data-column="column1">Blogger</th>
+								<th class="column100 column2" data-column="column2">Promo code</th>
+								<th class="column100 column3" data-column="column3">Amount of passed</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -40,55 +39,47 @@
 								<td class="column100 column1" data-column="column1">Lawrence Scott</td>
 								<td class="column100 column2" data-column="column2">8:00 AM</td>
 								<td class="column100 column3" data-column="column3">--</td>
-								<td class="column100 column4" data-column="column4">--</td>
 							</tr>
 
 							<tr class="row100">
 								<td class="column100 column1" data-column="column1">Jane Medina</td>
 								<td class="column100 column2" data-column="column2">--</td>
 								<td class="column100 column3" data-column="column3">5:00 PM</td>
-								<td class="column100 column4" data-column="column4">5:00 PM</td>
 							</tr>
 
 							<tr class="row100">
 								<td class="column100 column1" data-column="column1">Billy Mitchell</td>
 								<td class="column100 column2" data-column="column2">9:00 AM</td>
 								<td class="column100 column3" data-column="column3">--</td>
-								<td class="column100 column4" data-column="column4">--</td>
 
 							<tr class="row100">
 								<td class="column100 column1" data-column="column1">Beverly Reid</td>
 								<td class="column100 column2" data-column="column2">--</td>
 								<td class="column100 column3" data-column="column3">5:00 PM</td>
-								<td class="column100 column4" data-column="column4">5:00 PM</td>
 							</tr>
 
 							<tr class="row100">
 								<td class="column100 column1" data-column="column1">Tiffany Wade</td>
 								<td class="column100 column2" data-column="column2">8:00 AM</td>
 								<td class="column100 column3" data-column="column3">--</td>
-								<td class="column100 column4" data-column="column4">--</td>
 							</tr>
 
 							<tr class="row100">
 								<td class="column100 column1" data-column="column1">Sean Adams</td>
 								<td class="column100 column2" data-column="column2">--</td>
 								<td class="column100 column3" data-column="column3">5:00 PM</td>
-								<td class="column100 column4" data-column="column4">5:00 PM</td>
 							</tr>
 
 							<tr class="row100">
 								<td class="column100 column1" data-column="column1">Rachel Simpson</td>
 								<td class="column100 column2" data-column="column2">9:00 AM</td>
 								<td class="column100 column3" data-column="column3">--</td>
-								<td class="column100 column4" data-column="column4">--</td>
 							</tr>
 
 							<tr class="row100">
 								<td class="column100 column1" data-column="column1">Mark Salazar</td>
 								<td class="column100 column2" data-column="column2">8:00 AM</td>
 								<td class="column100 column3" data-column="column3">--</td>
-								<td class="column100 column4" data-column="column4">--</td>
 						</tbody>
 					</table>
 				</div>
