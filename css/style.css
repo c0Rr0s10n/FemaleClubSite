@@ -1,5 +1,6 @@
 body {
-  width: 100%; }
+  width: 100%;
+  overflow-x: hidden; }
 
 .navbar {
   box-shadow: 2px 2px 5px white;
@@ -48,21 +49,41 @@ body {
 .transition {
   height: 20px; }
 
-#description {
+.video-background-holder {
   position: relative;
-  background: url(../img/description_bg.jpg);
-  min-height: 640px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  #description .gradient-overlay {
-    background: rgba(100, 31, 77, 0.747);
-    top: 0;
-    left: 0;
-    width: auto;
-    height: 640px; }
-  #description .description-text {
-    font-size: 2rem; }
+  background-color: black;
+  height: calc(100vh - 72px);
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden; }
+
+.video-background-holder video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
+
+.video-background-content {
+  position: relative;
+  z-index: 2; }
+
+.video-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1; }
 
 #description-continue {
   min-height: 540px; }
@@ -164,5 +185,10 @@ body {
   #reviews .carousel {
     width: 282.6px;
     height: 502.6px; } }
+@media (pointer: coarse) and (hover: none) {
+  #description {
+    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black no-repeat center center scroll; }
+    #description video {
+      display: none; } }
 
 /*# sourceMappingURL=style.css.map */
