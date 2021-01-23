@@ -189,7 +189,13 @@ body {
 
 #description-continue {
     min-height: 540px;
+    position: relative;
 
+    background-image: url(../img/Web-Background.png);
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     span {
         color: $tpink;
     }
