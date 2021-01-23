@@ -32,7 +32,7 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" method="POST">
 					<span class="login100-form-title p-b-33">
 						Admin panel log-in
 					</span>
@@ -54,26 +54,38 @@
 							Sign in
 						</button>
 					</div>
+					
+					<div class="text-center p-t-45 p-b-4">
+						<span class="txt1">
+                            <?php
+                            function test_input($data) {
+                                $data = trim($data);
+                                $data = stripslashes($data);
+                                $data = htmlspecialchars($data);
+                                return $data;
+                              }
+    							if ($_SERVER["REQUEST_METHOD"] == "POST") {
+									$login = test_input($_POST["login"]);
+									$password = test_input($_POST["pass"]);
+									if (md5($login)==md5("admin") && md5($password)==md5("neskromnaya")){
+										header('Location: https://onemuseclub.kz/control_panel.php');
+									}
+									else{
+										echo "Invalid data.";
+									}
+								  }
+								else{
+									echo "Please, input authorization data.";
+								}
+                            ?>
+						</span>
+					</div>
+					
 				</form>
 			</div>
 		</div>
 	</div>
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $login = test_input($_POST["login"]);
-        $password = test_input($_POST["pass"]);
-
-        if (md5($login)==md5("admin") && md5($password)==md5("neskromnaya")){
-            header('Location: https://onemuseclub.kz/control_panel.php');
-        }
-        else{
-            echo "<h1>Invalid data.</h1>";
-        }
-      }
-    else{
-        echo "<h1>Please, input authorization data.</h1>";
-    }
-    ?>
+    
 
 	
 <!--===============================================================================================-->
