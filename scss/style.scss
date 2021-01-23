@@ -188,16 +188,32 @@ body {
 
 
 #description-continue {
-    min-height: 540px;
+    min-height: 800px;
     position: relative;
 
-    background-image: url(../img/Web-Background.png);
-    background-position: center;
-    -webkit-background-size: cover;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    p{
+        text-indent: 1rem;
+        font-size: large;
+    }
+
+
+    // background-image: url(../img/Web-Background.png);
+    // background-position: center;
+    // -webkit-background-size: cover;
+    // background-size: 100% auto;
+    // background-repeat: no-repeat;
     span {
         color: $tpink;
+    }
+
+
+    .block1 {
+        margin-left: 10%;
+    }
+
+    img {
+        height: 400px;
+        width: auto;
     }
 }
 

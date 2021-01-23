@@ -86,9 +86,18 @@ body {
   z-index: 1; }
 
 #description-continue {
-  min-height: 540px; }
+  min-height: 800px;
+  position: relative; }
+  #description-continue p {
+    text-indent: 1rem;
+    font-size: large; }
   #description-continue span {
     color: #c75791; }
+  #description-continue .block1 {
+    margin-left: 10%; }
+  #description-continue img {
+    height: 400px;
+    width: auto; }
 
 #timer {
   position: relative;
