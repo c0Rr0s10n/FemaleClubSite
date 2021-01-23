@@ -1,48 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animate.min.css">
-  <script type="text/javascript" src="/js/wow.min.js"></script>
-  <script>
-    var wow = new WOW();
-    wow.init();
-    
-  </script>
-  <title>Female Club</title>
+	<title>Login V19</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
 </head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-33">
+						Admin panel log-in
+					</span>
 
-<body>  
-    <div class="container">
-        <form action="" method="post">
-            <input type="text" placeholder="Login" name="login">
-            <input type="text" placeholder="Authorization" name="password">
-        </form>
-        <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $login = test_input($_POST["login"]);
-            $email = test_input($_POST["password"]);
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="login" placeholder="Email">
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
 
-            if (md5($login)==md5("admin") && md5($password)==md5("neskromnaya")){
-                header('Location: https://onemuseclub.kz/control_panel.php');
-            }
-            else{
-                echo "<h1>Invalid data.</h1>";
-            }
-          }
-        else{
-            echo "<h1>Please, input authorization data.</h1>";
+					<div class="wrap-input100 rs1 validate-input" data-validate="Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
+
+					<div class="container-login100-form-btn m-t-20">
+						<button class="login100-form-btn">
+							Sign in
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+    <?php
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $login = test_input($_POST["login"]);
+        $password = test_input($_POST["pass"]);
+
+        if (md5($login)==md5("admin") && md5($password)==md5("neskromnaya")){
+            header('Location: https://onemuseclub.kz/control_panel.php');
         }
-        ?>
-    </div>
+        else{
+            echo "<h1>Invalid data.</h1>";
+        }
+      }
+    else{
+        echo "<h1>Please, input authorization data.</h1>";
+    }
+    ?>
+    ?>
+
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
 
 </body>
-
 </html>
