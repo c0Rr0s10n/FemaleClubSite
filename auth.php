@@ -59,7 +59,6 @@
 		</div>
 	</div>
     <?php
-    <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $login = test_input($_POST["login"]);
         $password = test_input($_POST["pass"]);
@@ -74,7 +73,6 @@
     else{
         echo "<h1>Please, input authorization data.</h1>";
     }
-    ?>
     ?>
 
 	
