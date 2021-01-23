@@ -38,7 +38,6 @@
 						<?php
 							$conn_string = "host=srv-db-pgsql01.ps.kz port=5432 dbname=onemusec_data user=onemusec_main password=V3K3~5qtc*4n";
 							$dbconn4 = pg_connect($conn_string);
-							}
             			?>
 
 							<!-- <tr class="row100">
@@ -89,10 +88,10 @@
 							<!-- </tr> -->
 						</tbody>
 					</table>
-					<form action="" method="post">
+					<!-- <form action="" method="post">
 						<input type="text" name="Blogger" id="" placeholder="Name of blogger">
 						<input type="text" name="Blogger" id="" placeholder="Promo">
-					</form>
+					</form> -->
 				</div>
 			</div>
 		</div>
