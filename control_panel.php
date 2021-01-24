@@ -22,16 +22,16 @@
 <!--===============================================================================================-->
 </head>
 <body>
-	<?php
-							 $dbhost = 'https://srv-plesk48.ps.kz:8443';
-							 $dbuser = 'onemusec_admin';
-							 $dbpass = 'V3K3~5qtc*4n';
-							 $dbname = 'onemusec_data';
-							 $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
-							if ($conn->connect_error) {
-							  die("Database connection failed: " . $conn->connect_error);
-							}
-							?>
+<?php
+$dbhost = 'srv-pleskdb48.ps.kz:3306';
+$dbuser = 'onemusec_admin';
+$dbpass = 'V3K3~5qtc*4n';
+$dbname = 'onemusec_data';
+$conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+if (mysqli_connect_errno()) {
+    printf("Connect failed: %s\n", mysqli_connect_error());
+}
+?>
 	<div class="limiter">
 		<div class="container-table100">
 				<div class="table100 ver6 m-b-110">
@@ -45,12 +45,16 @@
 						</thead>
 						<tbody>
 							<?php
-							 $query = mysqli_query($conn, "SELECT * FROM promos")
+							$query = mysqli_query($conn, "SELECT * FROM promos")
 								or die (mysqli_error($conn));
 							while ($row = mysqli_fetch_array($query)) {
-  								echo 'hello';
+  								echo '<tr class="row100">
+								  <td class="column100 column1 hov-column-ver6" data-column="column1">'.$row['blogger'].'</td>
+								  <td class="column100 column2" data-column="column2">'.$row['promo'].'</td>
+								  <td class="column100 column3" data-column="column3">'.$row['amount'].'</td>
+								  </tr>';
 							}
-						  ?>	
+							?>
 						</tbody>
 					</table>
 					<!-- <form action="" method="post">
