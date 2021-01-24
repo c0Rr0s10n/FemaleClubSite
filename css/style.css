@@ -14,12 +14,12 @@ body {
     padding-right: 1.4rem; }
 
 #header {
-  min-height: 700px;
+  min-height: 750px;
   position: relative;
   background-image: url(../img/girl3.jpeg), url(../img/girl1.jpeg), url(../img/girl2.jpeg);
   background-position: center, left, right;
   -webkit-background-size: cover;
-  background-size: 33.3% 700px;
+  background-size: 33.3% 750px;
   background-repeat: no-repeat; }
   #header .company-name {
     animation-duration: 1.3s; }
@@ -38,7 +38,7 @@ body {
   #header span {
     color: #c75791; }
   #header .black-overlay {
-    min-height: 700px;
+    min-height: 750px;
     background: rgba(0, 0, 0, 0.645);
     top: 0;
     left: 0;

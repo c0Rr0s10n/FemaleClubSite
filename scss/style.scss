@@ -28,12 +28,12 @@ body {
 }
 
 #header {
-    min-height: 700px;
+    min-height: 750px;
     position: relative;
     background-image: url(../img/girl3.jpeg), url(../img/girl1.jpeg), url(../img/girl2.jpeg);
     background-position: center, left, right;
     -webkit-background-size: cover;
-    background-size: 33.3% 700px;
+    background-size: 33.3% 750px;
     background-repeat: no-repeat;
 
     .company-name {
@@ -66,7 +66,7 @@ body {
     }
     
     .black-overlay {
-        min-height: 700px;
+        min-height: 750px;
         background: $black-overlay;
         top: 0;
         left: 0;
