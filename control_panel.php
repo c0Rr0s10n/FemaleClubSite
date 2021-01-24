@@ -22,7 +22,18 @@
 <!--===============================================================================================-->
 </head>
 <body>
-	
+<?php
+         $dbhost = 'localhost:3036';
+         $dbuser = 'guest1';
+         $dbpass = 'guest1a';
+		 $dbname = 'onemusec_data';
+         $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+		if ($conn->connect_error) {
+		  die("Database connection failed: " . $conn->connect_error);
+		}
+         echo 'Connected successfully';
+         mysql_close($conn);
+      ?>
 	<div class="limiter">
 		<div class="container-table100">
 				<div class="table100 ver6 m-b-110">
@@ -35,18 +46,7 @@
 							</tr>
 						</thead>
 						<tbody> -->
-						<?php
-							$dbhost = 'srv-pleskdb48.ps.kz:3306';
-							 $dbuser = 'onemusec_admin';
-							 $dbpass = 'V3K3~5qtc*4n';
-							 $conn = mysql_connect($dbhost, $dbuser, $dbpass);
-							 if(! $conn ) {
-								die('Could not connect: ' . mysql_error());
-							 }
-
-							 echo 'Connected successfully';
-							 mysql_close($conn);
-            			?>
+						
 
 							<!-- <tr class="row100">
 								<td class="column100 column1" data-column="column1">Lawrence Scott</td>
