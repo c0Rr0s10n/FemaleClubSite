@@ -26,7 +26,7 @@
 	<div class="limiter">
 		<div class="container-table100">
 				<div class="table100 ver6 m-b-110">
-					<table data-vertable="ver6">
+					<!-- <table data-vertable="ver6">
 						<thead>
 							<tr class="row100 head">
 								<th class="column100 column1" data-column="column1">Blogger</th>
@@ -34,10 +34,18 @@
 								<th class="column100 column3" data-column="column3">Amount of passed</th>
 							</tr>
 						</thead>
-						<tbody>
+						<tbody> -->
 						<?php
-							$conn_string = "host=srv-db-pgsql01.ps.kz port=5432 dbname=onemusec_data user=onemusec_main password=V3K3~5qtc*4n";
-							$dbconn4 = pg_connect($conn_string);
+							$dbhost = 'srv-pleskdb48.ps.kz:3306';
+							 $dbuser = 'onemusec_admin';
+							 $dbpass = 'V3K3~5qtc*4n';
+							 $conn = mysql_connect($dbhost, $dbuser, $dbpass);
+							 if(! $conn ) {
+								die('Could not connect: ' . mysql_error());
+							 }
+
+							 echo 'Connected successfully';
+							 mysql_close($conn);
             			?>
 
 							<!-- <tr class="row100">
@@ -86,8 +94,8 @@
 								<td class="column100 column2" data-column="column2">8:00 AM</td>
 								<td class="column100 column3" data-column="column3">--</td> -->
 							<!-- </tr> -->
-						</tbody>
-					</table>
+						<!-- </tbody>
+					</table> -->
 					<!-- <form action="" method="post">
 						<input type="text" name="Blogger" id="" placeholder="Name of blogger">
 						<input type="text" name="Blogger" id="" placeholder="Promo">
@@ -95,7 +103,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
 
 
 	
