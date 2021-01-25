@@ -22,7 +22,16 @@
 <!--===============================================================================================-->
 </head>
 <body>
-	
+<?php
+$dbhost = 'srv-pleskdb48.ps.kz:3306';
+$dbuser = 'onemusec_admin';
+$dbpass = 'V3K3~5qtc*4n';
+$dbname = 'onemusec_data';
+$conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+if (mysqli_connect_errno()) {
+    printf("Connect failed: %s\n", mysqli_connect_error());
+}
+?>
 	<div class="limiter">
 		<div class="container-table100">
 				<div class="table100 ver6 m-b-110">
@@ -35,57 +44,17 @@
 							</tr>
 						</thead>
 						<tbody>
-						<?php
-							$conn_string = "host=srv-db-pgsql01.ps.kz port=5432 dbname=onemusec_data user=onemusec_main password=V3K3~5qtc*4n";
-							$dbconn4 = pg_connect($conn_string);
-            			?>
-
-							<!-- <tr class="row100">
-								<td class="column100 column1" data-column="column1">Lawrence Scott</td>
-								<td class="column100 column2" data-column="column2">8:00 AM</td>
-								<td class="column100 column3" data-column="column3">--</td>
-							</tr>
-
-							<tr class="row100">
-								<td class="column100 column1" data-column="column1">Jane Medina</td>
-								<td class="column100 column2" data-column="column2">--</td>
-								<td class="column100 column3" data-column="column3">5:00 PM</td>
-							</tr>
-
-							<tr class="row100">
-								<td class="column100 column1" data-column="column1">Billy Mitchell</td>
-								<td class="column100 column2" data-column="column2">9:00 AM</td>
-								<td class="column100 column3" data-column="column3">--</td>
-
-							<tr class="row100">
-								<td class="column100 column1" data-column="column1">Beverly Reid</td>
-								<td class="column100 column2" data-column="column2">--</td>
-								<td class="column100 column3" data-column="column3">5:00 PM</td>
-							</tr>
-
-							<tr class="row100">
-								<td class="column100 column1" data-column="column1">Tiffany Wade</td>
-								<td class="column100 column2" data-column="column2">8:00 AM</td>
-								<td class="column100 column3" data-column="column3">--</td>
-							</tr>
-
-							<tr class="row100">
-								<td class="column100 column1" data-column="column1">Sean Adams</td>
-								<td class="column100 column2" data-column="column2">--</td>
-								<td class="column100 column3" data-column="column3">5:00 PM</td>
-							</tr>
-
-							<tr class="row100">
-								<td class="column100 column1" data-column="column1">Rachel Simpson</td>
-								<td class="column100 column2" data-column="column2">9:00 AM</td>
-								<td class="column100 column3" data-column="column3">--</td>
-							</tr>
-
-							<tr class="row100">
-								<td class="column100 column1" data-column="column1">Mark Salazar</td>
-								<td class="column100 column2" data-column="column2">8:00 AM</td>
-								<td class="column100 column3" data-column="column3">--</td> -->
-							<!-- </tr> -->
+							<?php
+							$query = mysqli_query($conn, "SELECT * FROM promos")
+								or die (mysqli_error($conn));
+							while ($row = mysqli_fetch_array($query)) {
+  								echo '<tr class="row100">
+								  <td class="column100 column1 hov-column-ver6" data-column="column1">'.$row['blogger'].'</td>
+								  <td class="column100 column2" data-column="column2">'.$row['promo'].'</td>
+								  <td class="column100 column3" data-column="column3">'.$row['amount'].'</td>
+								  </tr>';
+							}
+							?>
 						</tbody>
 					</table>
 					<!-- <form action="" method="post">
@@ -95,10 +64,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-
-	
 
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min (2).js"></script>
