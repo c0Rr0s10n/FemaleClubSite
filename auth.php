@@ -58,13 +58,13 @@
 					<div class="text-center p-t-45 p-b-4">
 						<span class="txt1">
                             <?php
+								function test_input($data) {
+									$data = trim($data);
+									$data = stripslashes($data);
+									$data = htmlspecialchars($data);
+									return $data;
+								}
     							if ($_SERVER["REQUEST_METHOD"] == "POST") {
-									function test_input($data) {
-										$data = trim($data);
-										$data = stripslashes($data);
-										$data = htmlspecialchars($data);
-										return $data;
-									  }
 									$dbhost = 'srv-pleskdb48.ps.kz:3306';
 									$dbuser = 'onemusec_admin';
 									$dbpass = 'V3K3~5qtc*4n';
@@ -82,9 +82,7 @@
 											header('Location: https://onemuseclub.kz/control_panel.php');
 										}
 									}
-									else{
 										echo "Invalid data.";
-									}
 								  }
 								else{
 									echo "Please, input authorization data.";
