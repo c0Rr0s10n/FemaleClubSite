@@ -58,17 +58,29 @@
 					<div class="text-center p-t-45 p-b-4">
 						<span class="txt1">
                             <?php
-                            function test_input($data) {
-                                $data = trim($data);
-                                $data = stripslashes($data);
-                                $data = htmlspecialchars($data);
-                                return $data;
-                              }
     							if ($_SERVER["REQUEST_METHOD"] == "POST") {
+									function test_input($data) {
+										$data = trim($data);
+										$data = stripslashes($data);
+										$data = htmlspecialchars($data);
+										return $data;
+									  }
+									$dbhost = 'srv-pleskdb48.ps.kz:3306';
+									$dbuser = 'onemusec_admin';
+									$dbpass = 'V3K3~5qtc*4n';
+									$dbname = 'onemusec_data';
+									$conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+									if (mysqli_connect_errno()) {
+										printf("Connect failed: %s\n", mysqli_connect_error());
+									}
 									$login = test_input($_POST["login"]);
 									$password = test_input($_POST["pass"]);
-									if (md5($login)==md5("admin") && md5($password)==md5("neskromnaya")){
-										header('Location: https://onemuseclub.kz/control_panel.php');
+									$query = mysqli_query($conn, "SELECT * FROM users")
+											or die (mysqli_error($conn));
+									while ($row = mysqli_fetch_array($query)) {
+										if (md5($login) == $row['login'] && md5($password) == $row['pass']){
+											header('Location: https://onemuseclub.kz/control_panel.php');
+										}
 									}
 									else{
 										echo "Invalid data.";
