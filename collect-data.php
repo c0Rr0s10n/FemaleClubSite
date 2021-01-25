@@ -7,7 +7,6 @@ $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 if (mysqli_connect_errno()) {
     printf("Connect failed: %s\n", mysqli_connect_error());
 }
-$data = json_decode(file_get_contents('php://input'), true);
-$query = mysqli_query($conn, "INSERT INTO bills ('number', 'session') VALUES ('".$data['id'].','324'")
+$query = mysqli_query($conn, "INSERT INTO bills ('number', 'session') VALUES ('".$_POST['id'].','324'")
                     or die (mysqli_error($conn));
 ?>
