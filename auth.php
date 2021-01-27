@@ -79,7 +79,7 @@
 											or die (mysqli_error($conn));
 									while ($row = mysqli_fetch_array($query)) {
 										if (md5($login) == $row['login'] && md5($password) == $row['pass']){
-											header('Location: https://onemuseclub.kz/control_panel.php');
+											header('Location: https://onemuseclub.kz/control_panel');
 										}
 									}
 										echo "Invalid data.";
