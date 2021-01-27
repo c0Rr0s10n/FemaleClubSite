@@ -261,7 +261,7 @@ while ($row = mysqli_fetch_array($data)) {
                     <p>5169 4971 3410 0092</p>
                     <p><span>KARINA MUKASHEVA</span></p>
                     <p>ПО НОМЕРУ <span>+7 702 166 6638</span></p>
-						<p><strong>Обратите, пожалуйста, внимание!</strong><br>После проведения платежа <strong>ОБЯЗАТЕЛЬНО</strong> запомните либо запишите ваш ID платежа, который покажется по завершению транзакции.<br>В дальнейшем он будет использоваться для проверки вашей оплаты.</p>
+						<!-- <p><strong>Обратите, пожалуйста, внимание!</strong><br>После проведения платежа <strong>ОБЯЗАТЕЛЬНО</strong> запомните либо запишите ваш ID платежа, который покажется по завершению транзакции.<br>В дальнейшем он будет использоваться для проверки вашей оплаты.</p>
                     <label class="clarify" for="exampleInputEmail1">Промокод</label>
                     <input type="text" class="form-control promo-code" id="" aria-describedby="" placeholder="Введите промокод">
                     <input type="hidden" class="codes" value="<?php foreach ($codes as $code) echo $code.' '; ?>">
@@ -282,7 +282,7 @@ while ($row = mysqli_fetch_array($data)) {
 							<form action="bill-check" method="post">
                           <input type="text" class="form-control" placeholder="" name="bill_id">
                           <button class="btn btn-outline-tpink mt-3">Получить доступ!</button>
-							</form>
+							</form> -->
                         </div>
                       </div>
                     </div>
