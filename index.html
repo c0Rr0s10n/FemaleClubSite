@@ -279,8 +279,10 @@ while ($row = mysqli_fetch_array($data)) {
                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa ipsum commodi perferendis voluptatum rem possimus ipsa nam! Exercitationem necessitatibus id ducimus voluptatibus iure expedita aliquam inventore dolore repellat! Officiis dolorem est amet non hic reprehenderit ullam sequi voluptate illum veniam.
 
                           <label for="" class="mt-5 text-left">ID чека</label>
-                          <input type="text" class="form-control" placeholder="">
-                          <button class="btn btn-outline-tpink mt-3">Проверить</button>
+                          <form action="bill-check.php" method="post">
+                            <input type="text" class="form-control" name="bill_id" placeholder="">
+                            <button class="btn btn-outline-tpink mt-3">Проверить</button>
+                          </form>
                         </div>
                       </div>
                     </div>
