@@ -268,9 +268,9 @@ while ($row = mysqli_fetch_array($data)) {
                     <a href="https://ecommerce.pult24.kz/invoice?id=12089446729974178" class="btn btn-outline-tpink mt-3" target="_blank">Купить</a>
 
                     <div class="widget-body mt-5">
-                      <!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                       <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                         Button with data-target
-                      </button> -->
+                      </button> 
                       <p>Для проверки платежа нажмите на стрелочку ниже.</p>
                       <i class="arrow-down fas fa-angle-down fa-3x" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></i>
                       
