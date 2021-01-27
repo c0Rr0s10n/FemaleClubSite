@@ -275,8 +275,9 @@ while ($row = mysqli_fetch_array($data)) {
                       <i class="arrow-down fas fa-angle-down fa-3x" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></i>
                       
                       <div class="collapse" id="collapseExample">
+						  Введите ваш идентификатор платежа.
                         <div class="card card-body">
-                          Введите ваш идентификатор платежа.
+                          В случае, если вы забыли\утеряли идентификатор, но указывали свой адрес электронной почты при оплате, проверьте его. Там должно быть письмо об оплате со всей необходимой информацией.
                           <label for="" class="mt-5 text-left">ID платежа</label>
 							<form action="bill-check" method="post">
                           <input type="text" class="form-control" placeholder="" name="bill_id">
