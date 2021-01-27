@@ -9,8 +9,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mysqli_connect_errno()) {
         printf("Connect failed: %s\n", mysqli_connect_error());
     }
-    $sql = "SELECT * from bills WHERE number='{$bill_id}'";
+    $sql = "SELECT * FROM bills WHERE number = '".$bill_id."';";
     $data = mysqli_query($conn, $sql)
             or die (mysqli_error($conn));
+	$row = mysqli_fetch_array($data, MYSQLI_NUM);
+	if ($row[2]=="1")
+	{
+		header("Location: https://onemuseclub.kz/accessed-bill?bill_id=".$bill_id);
+	}
+	else
+	{
+		header("Location: https://onemuseclub.kz/declined-bill?bill_id=".$bill_id);
+	}
 }
 ?>

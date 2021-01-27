@@ -261,7 +261,7 @@ while ($row = mysqli_fetch_array($data)) {
                     <p>5169 4971 3410 0092</p>
                     <p><span>KARINA MUKASHEVA</span></p>
                     <p>ПО НОМЕРУ <span>+7 702 166 6638</span></p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quas facere commodi maxime beatae atque officiis quam dignissimos repellendus delectus accusamus corporis quod nisi, debitis cum. Sit doloremque facere vitae minima libero vel, porro tempore id quibusdam laborum? Iste, non.</p>
+						<p><strong>Обратите, пожалуйста, внимание!</strong><br>После проведения платежа <strong>ОБЯЗАТЕЛЬНО</strong> запомните либо запишите ваш ID платежа, который покажется по завершению транзакции.<br>В дальнейшем он будет использоваться для проверки вашей оплаты.</p>
                     <label class="clarify" for="exampleInputEmail1">Промокод</label>
                     <input type="text" class="form-control promo-code" id="" aria-describedby="" placeholder="Введите промокод">
                     <input type="hidden" class="codes" value="<?php foreach ($codes as $code) echo $code.' '; ?>">
@@ -271,18 +271,17 @@ while ($row = mysqli_fetch_array($data)) {
                       <!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                         Button with data-target
                       </button> -->
-                      <p>После успешной оплаты нажмите на стрелочку</p>
+                      <p>Для проверки платежа нажмите на стрелочку ниже.</p>
                       <i class="arrow-down fas fa-angle-down fa-3x" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></i>
                       
                       <div class="collapse" id="collapseExample">
                         <div class="card card-body">
-                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa ipsum commodi perferendis voluptatum rem possimus ipsa nam! Exercitationem necessitatibus id ducimus voluptatibus iure expedita aliquam inventore dolore repellat! Officiis dolorem est amet non hic reprehenderit ullam sequi voluptate illum veniam.
-
-                          <label for="" class="mt-5 text-left">ID чека</label>
-                          <form action="bill-check.php" method="post">
-                            <input type="text" class="form-control" name="bill_id" placeholder="">
-                            <button class="btn btn-outline-tpink mt-3">Проверить</button>
-                          </form>
+                          Введите ваш идентификатор платежа.
+                          <label for="" class="mt-5 text-left">ID платежа</label>
+							<form action="bill-check" method="post">
+                          <input type="text" class="form-control" placeholder="" name="bill_id">
+                          <button class="btn btn-outline-tpink mt-3">Получить доступ!</button>
+							</form>
                         </div>
                       </div>
                     </div>
