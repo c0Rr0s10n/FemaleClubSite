@@ -1,0 +1,31 @@
+#declined {
+    height: 600px;
+}
+
+#declined div {
+    height: 300px;
+    margin-top: 250px;
+    text-align: center;
+  }
+
+#declined span {
+    font-size: 3.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+  }
+
+
+#declined img {
+    height: 150px;
+    width: auto;
+}
+
+#declined p {
+    font-size: 2rem;
+}
+
+#declined a {
+    text-decoration: none;
+    color: #28a745;
+}
